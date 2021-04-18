@@ -59,3 +59,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/widevine/32bit_liboemcrypto_curtana.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto_curtana.so \
     $(LOCAL_PATH)/widevine/64bit_libcpion_curtana.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcpion_curtana.so \
     $(LOCAL_PATH)/widevine/64bit_liboemcrypto_curtana.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto_curtana.so
+
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-aosp \
+    $(LOCAL_PATH)/overlay-system
